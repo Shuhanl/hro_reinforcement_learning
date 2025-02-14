@@ -12,7 +12,7 @@ from ml_collections import config_flags
 from flax.training import checkpoints
 
 import humanoid_bench
-import sac as learner
+import jaxrl_m.sac as learner
 from jaxrl_m.wandb import setup_wandb, default_wandb_config, get_flag_dict
 from jaxrl_m.evaluation import supply_rng, evaluate, flatten, EpisodeMonitor
 from jaxrl_m.dataset import ReplayBuffer
